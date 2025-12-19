@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Balancing Battle</title>
+</head>
+<body>
+  <h2>⚗️ Balancing Battle</h2>
+  <p>Balance: H₂ + O₂ → H₂O</p>
+
+  <input id="h2" type="number" placeholder="H₂">
+  <input id="o2" type="number" placeholder="O₂">
+  <input id="h2o" type="number" placeholder="H₂O">
+  <br><br>
+
+  <button onclick="check()">Check</button>
+  <p id="result"></p>
+
+  <script>
+    function check() {
+      let h2 = h2.value, o2 = o2.value, h2o = h2o.value;
+      result.innerText = (h2==2 && o2==1 && h2o==2)
+        ? "✅ Balanced!"
+        : "❌ Try Again";
+    }
+  </script>
+</body>
+</html>
